@@ -1,6 +1,49 @@
-@import 'reset.scss';
+
+
+//Variables
+  /* Colors */
+$primary-100:#0070C0;
+$primary-200:#004E86;
+$primary-300:#6EC3FF;
+$accent-100:#FFC000;
+$accent-200:#B38600;
+$text-100:#333333;
+$text-200:#737373;
+$bg-100:#F5F5F5;
+$bg-200:#E9E9E9;
+$bg-300:#FFFFFF;
+    /* Size */
+$size-1: 20px;
+  
+// Begin
 
 body{
-    color: black;
-    font-size: 40px;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: $bg-100;
+    font-family: 'Raleway', sans-serif;
+}
+i{
+    color: $primary-100;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: $size-1;
+
+    .personal-informations{
+        display: flex;
+        
+        .telephone p{
+            margin-right: 20px;
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
+    .social-informations i{
+        margin-right: 10px;
+    }
 }
