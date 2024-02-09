@@ -29,9 +29,11 @@ i{
 
 .header-top{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: $size-1;
+    max-width: 1200px;
+    margin: 0 auto;
 
     .personal-informations{
         display: flex;
@@ -44,6 +46,57 @@ i{
         }
     }
     .social-informations i{
-        margin-right: 10px;
+        margin-left: 10px;
+        &:hover{
+            transform: scale(1.5);
+            transition: transform 0.3s;
+            color: $primary-200;
+        }
+    }
+}
+
+.header-bottom{
+    display: flex;
+    @extend .header-top;
+    margin-top: 20px;
+
+    .right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+        .liens a{
+            text-decoration: none;
+            color: $text-100;
+            margin:0 10px;
+            padding: 0 5px;
+            transform: scale(1.5);
+
+            &:hover{
+                color: #000;
+                text-decoration: underline;
+                text-underline-offset: 20px;
+                font-weight: 700;
+            }
+        }
+        .account{
+            button{
+                padding: 10px;
+                width: 150px;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $primary-100;
+                    a{
+                        color: $bg-100;
+                    }
+                }
+            }
+            a{
+                color: $text-100;
+                text-decoration: none;
+            }
+        }
     }
 }

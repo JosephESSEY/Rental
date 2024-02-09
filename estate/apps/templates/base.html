@@ -1,4 +1,5 @@
 {% load sass_tags %}
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +35,8 @@
                 <div class="telephone">
                     <p>
                         <span>
-                            <i class="fa-solid fa-phone"></i>                        </span>
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
                         +228 93829581
                     </p>
                 </div>
@@ -56,7 +58,26 @@
         </div>
         <hr>
         <div class="header-bottom">
-
+            <div class="left logo">
+                <img src="{% static 'images/logo.png' %}" alt="">
+            </div>
+            <div class="right">
+                <div class="liens">
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                </div>
+                <div class="account">
+                    <button>
+                        <a href="">Se Connecter</a>
+                    </button>
+                    <button>
+                        <a href="">Publier</a>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
 </body>
